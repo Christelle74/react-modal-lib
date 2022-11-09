@@ -12,17 +12,18 @@ Run the following command:
 ## How to use ?
 **1 - Import the pluggin :**
 
-import {Modal} from "modal-lib"
+`import {Modal} from "modal-lib"`
 
 
 **2 - Use this state :**
 
-const [modalOpen, setModalOpen] = useState(false)
+`const [modalOpen, setModalOpen] = useState(false)`
 
 
 **3 - Return the modal :**
 
-```<Modal 
+```
+<Modal 
     modalStyle={modalStyle} 
     modalHeaderStyle={modalHeaderStyle} 
     modalBodyStyle={modalBodyStyle} 
@@ -35,12 +36,14 @@ const [modalOpen, setModalOpen] = useState(false)
     buttonText2="Cancel"
     showModal={displayModal} 
     hideModal={()=>setDisplayModal(false)} 
-/>```
+/>
+```
 
 ## Give it your own style !
 **Put into your component :**
 
-```const modalStyle = {
+```
+const modalStyle = {
     "background": "",
     "margin": "",
     "borderRadius": "",
@@ -48,25 +51,36 @@ const [modalOpen, setModalOpen] = useState(false)
     "width": "",
     "padding": "",
     "border": "",
-}```
+}
+```
 
-```const modalHeaderStyle = {
+```
+const modalHeaderStyle = {
     "display": "flex",
     ....
-}```
+}
+```
 
-```const modalBodyStyle = {
+```
+const modalBodyStyle = {
     ....
-}```
+}
+```
 
-```const modalFooterStyle = {
+```
+const modalFooterStyle = {
     ....
-}```
+}
+```
 
-```const xButtonStyle = {
+```
+const xButtonStyle = {
     ....
-}```
+}
+```
 
-```const footerButtonStyle = {
+```
+const footerButtonStyle = {
     ....
-}```
+}
+```
