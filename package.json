@@ -1,6 +1,6 @@
 {
   "name": "modal-lib",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "author": "Christelle74",
   "main": "dist/index.js",
   "private": false,
