@@ -4,18 +4,25 @@
 A modal pluggin for react using `create-react-app`.
 
 ## Installation
-Run the following command:`npm install modal-lib`
+Run the following command:
+
+`npm install modal-lib`
 
 
 ## How to use ?
-1 - Import the pluggin : 
+**1 - Import the pluggin :**
+
 import {Modal} from "modal-lib"
 
-2 - Use this state :
+
+**2 - Use this state :**
+
 const [modalOpen, setModalOpen] = useState(false)
 
-3 - Return the modal :
-<Modal 
+
+**3 - Return the modal :**
+
+```<Modal 
     modalStyle={modalStyle} 
     modalHeaderStyle={modalHeaderStyle} 
     modalBodyStyle={modalBodyStyle} 
@@ -28,12 +35,12 @@ const [modalOpen, setModalOpen] = useState(false)
     buttonText2="Cancel"
     showModal={displayModal} 
     hideModal={()=>setDisplayModal(false)} 
-/>
+/>```
 
 ## Give it your own style !
-Put into your component :
+**Put into your component :**
 
-const modalStyle = {
+```const modalStyle = {
     "background": "",
     "margin": "",
     "borderRadius": "",
@@ -41,25 +48,25 @@ const modalStyle = {
     "width": "",
     "padding": "",
     "border": "",
-}
+}```
 
-const modalHeaderStyle = {
+```const modalHeaderStyle = {
     "display": "flex",
     ....
-}
+}```
 
-const modalBodyStyle = {
+```const modalBodyStyle = {
     ....
-}
+}```
 
-const modalFooterStyle = {
+```const modalFooterStyle = {
     ....
-}
+}```
 
-const xButtonStyle = {
+```const xButtonStyle = {
     ....
-}
+}```
 
-const footerButtonStyle = {
+```const footerButtonStyle = {
     ....
-}
+}```
