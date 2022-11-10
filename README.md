@@ -17,7 +17,7 @@ Run the following command:
 
 **2 - Use this state :**
 
-`const [modalOpen, setModalOpen] = useState(false)`
+`const [displayModal, setDisplayModal] = useState(false)`
 
 
 **3 - Return the modal :**
@@ -40,7 +40,7 @@ Run the following command:
 ```
 
 ## Give it your own style !
-**Put into your component :**
+**Put into your component for example:**
 
 ```
 const modalStyle = {
@@ -61,26 +61,3 @@ const modalHeaderStyle = {
 }
 ```
 
-```
-const modalBodyStyle = {
-    ....
-}
-```
-
-```
-const modalFooterStyle = {
-    ....
-}
-```
-
-```
-const xButtonStyle = {
-    ....
-}
-```
-
-```
-const footerButtonStyle = {
-    ....
-}
-```
