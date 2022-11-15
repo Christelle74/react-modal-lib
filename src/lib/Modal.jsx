@@ -2,7 +2,7 @@ import React from "react";
 import './modale.css'
 import PropTypes from "prop-types"
 
-export const Modal = ({ showModal, hideModal, message, title, modalStyle, modalHeaderStyle, modalBodyStyle, modalFooterStyle,xButtonStyle, footerButtonStyle, buttonText1, buttonText2 }) =>{
+export const Modal = ({ showModal, hideModal, message, title, modalStyle, modalHeaderStyle, modalBodyStyle, modalFooterStyle,xButtonStyle, footerButton1Style, footerButton2Style, buttonText1, buttonText2 }) =>{
 
     return showModal && (
             <>
@@ -15,8 +15,8 @@ export const Modal = ({ showModal, hideModal, message, title, modalStyle, modalH
                     </div>
                     <div className="modal-body" style={modalBodyStyle}>{message}</div>
                     <div className="modal-footer" style={modalFooterStyle}>
-                        <button type="button" className="modal-close-button-footer" style={footerButtonStyle} onClick={hideModal}>{buttonText1}</button>
-                        <button type="button" className="modal-close-button-footer" style={footerButtonStyle} onClick={hideModal}>{buttonText2}</button>
+                        <button type="button" className="modal-close-button-footer" style={footerButton1Style} onClick={hideModal}>{buttonText1}</button>
+                        <button type="button" className="modal-close-button-footer" style={footerButton2Style} onClick={hideModal}>{buttonText2}</button>
                     </div>
                 </div>
                 </div>
