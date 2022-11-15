@@ -18,7 +18,8 @@ var Modal = function Modal(_ref) {
     modalBodyStyle = _ref.modalBodyStyle,
     modalFooterStyle = _ref.modalFooterStyle,
     xButtonStyle = _ref.xButtonStyle,
-    footerButtonStyle = _ref.footerButtonStyle,
+    footerButton1Style = _ref.footerButton1Style,
+    footerButton2Style = _ref.footerButton2Style,
     buttonText1 = _ref.buttonText1,
     buttonText2 = _ref.buttonText2;
   return showModal && /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
@@ -45,12 +46,12 @@ var Modal = function Modal(_ref) {
   }, /*#__PURE__*/_react.default.createElement("button", {
     type: "button",
     className: "modal-close-button-footer",
-    style: footerButtonStyle,
+    style: footerButton1Style,
     onClick: hideModal
   }, buttonText1), /*#__PURE__*/_react.default.createElement("button", {
     type: "button",
     className: "modal-close-button-footer",
-    style: footerButtonStyle,
+    style: footerButton2Style,
     onClick: hideModal
   }, buttonText2))))));
 };
