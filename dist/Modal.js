@@ -15,6 +15,7 @@ var Modal = function Modal(_ref) {
     title = _ref.title,
     modalStyle = _ref.modalStyle,
     modalHeaderStyle = _ref.modalHeaderStyle,
+    titleStyle = _ref.titleStyle,
     modalBodyStyle = _ref.modalBodyStyle,
     modalFooterStyle = _ref.modalFooterStyle,
     xButtonStyle = _ref.xButtonStyle,
@@ -32,7 +33,9 @@ var Modal = function Modal(_ref) {
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "modal-header",
     style: modalHeaderStyle
-  }, /*#__PURE__*/_react.default.createElement("h3", null, title), /*#__PURE__*/_react.default.createElement("button", {
+  }, /*#__PURE__*/_react.default.createElement("h3", {
+    style: titleStyle
+  }, title), /*#__PURE__*/_react.default.createElement("button", {
     type: "button",
     style: xButtonStyle,
     className: "modal-close-button",

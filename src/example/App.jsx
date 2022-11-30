@@ -22,7 +22,10 @@ function App() {
     "justifyContent": "space-between",
     "alignItems": "center",
     "margin": "0.2rem 0.5rem 1.5rem",
-    "color": "white",
+  }
+
+  const titleStyle={
+    "color": "pink",
   }
 
   const modalBodyStyle = {
@@ -48,8 +51,8 @@ function App() {
       "background": "transparent",
     }
 
-    const footerButtonStyle = {
-      "background": "lightBlue",
+    const footerButton1Style = {
+      "background": "yellow",
       "color": "red",
       "width":"20%",
       "cursor": "pointer",
@@ -58,13 +61,22 @@ function App() {
       "border": "1px solid rgb(39, 39, 39)"
     }
 
+    const footerButton2Style = {
+      "background": "lightblue",
+      "color": "red",
+      "width":"50%",
+      "cursor": "pointer",
+      "padding": "0.5rem",
+      "margin": "0.5rem",
+      "border": "1px solid rgb(39, 39, 39)"
+    }
 
   return (
     <div className="App">
       <button className='modal-toggle' onClick={() => setDisplayModal(true)}>
         show modal
       </button>
-      <Modal modalStyle={modalStyle} modalHeaderStyle={modalHeaderStyle} modalBodyStyle={modalBodyStyle} modalFooterStyle={modalFooterStyle} xButtonStyle={xButtonStyle} footerButtonStyle={footerButtonStyle} title="Enter your modal title here" message="Hello, your message here" showModal={displayModal} hideModal={() => setDisplayModal(false)} buttonText1='Ok' buttonText2='Cancel'/>
+      <Modal modalStyle={modalStyle} modalHeaderStyle={modalHeaderStyle} titleStyle={titleStyle} modalBodyStyle={modalBodyStyle} modalFooterStyle={modalFooterStyle} xButtonStyle={xButtonStyle} footerButton1Style={footerButton1Style} footerButton2Style={footerButton2Style} title="Enter your modal title here" message="Hello, your message here" showModal={displayModal} hideModal={() => setDisplayModal(false)} buttonText1='Ok' buttonText2='Cancel'/>
     </div>
   );
 }

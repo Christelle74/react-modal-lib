@@ -2,7 +2,7 @@ import React from "react";
 import './modale.css'
 import PropTypes from "prop-types"
 
-export const Modal = ({ showModal, hideModal, message, title, modalStyle, modalHeaderStyle, modalBodyStyle, modalFooterStyle,xButtonStyle, footerButton1Style, footerButton2Style, buttonText1, buttonText2 }) =>{
+export const Modal = ({ showModal, hideModal, message, title, modalStyle, modalHeaderStyle, titleStyle, modalBodyStyle, modalFooterStyle,xButtonStyle, footerButton1Style, footerButton2Style, buttonText1, buttonText2 }) =>{
 
     return showModal && (
             <>
@@ -10,7 +10,7 @@ export const Modal = ({ showModal, hideModal, message, title, modalStyle, modalH
                 <div className="modal-wrapper">
                 <div className="modal" style={modalStyle}>
                     <div className="modal-header" style={modalHeaderStyle}>
-                        <h3>{title}</h3>
+                        <h3 style={titleStyle}>{title}</h3>
                         <button type="button" style={xButtonStyle}  className="modal-close-button"  onClick={hideModal}>X</button>
                     </div>
                     <div className="modal-body" style={modalBodyStyle}>{message}</div>
